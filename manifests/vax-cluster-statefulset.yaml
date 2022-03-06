@@ -17,11 +17,11 @@ metadata:
   name: config
 data:
   autostart: |
-    vax0: autoboot
-    vax1: autoboot
-    vax2: autoboot
-    vax3: autoboot
-    vax4: autoboot
+    vax0: autostart
+    vax1: autostart
+    vax2: autostart
+    vax3: autostart
+    vax4: autostart
 ---
 apiVersion: apps/v1
 kind: StatefulSet

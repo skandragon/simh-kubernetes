@@ -10,6 +10,9 @@ some sort of bridge.
 
 # Architecture
 
+Only serial-style consoles are supported, as a graphics
+display inside a Kubernetes pod is really not a thing.
+
 I run 5 nodes, each with two disks.  Under VMS, these are named
 DSA0: and DSA1:.  DSA0: is where I install VMS, by following this guide:
 [Installing VMS in SIMH on Linux](https://vanalboom.org/node/18).

@@ -6,9 +6,6 @@ metadata:
   labels:
     app: vax-cluster
 spec:
-  ports:
-  - port: 80
-    name: web
   clusterIP: None
   selector:
     app: vax-cluster
@@ -20,9 +17,11 @@ metadata:
   name: config
 data:
   autostart: |
-    vax0: pending
-    vax1: pending
-    vax2: pending
+    vax0: autoboot
+    vax1: autoboot
+    vax2: autoboot
+    vax3: autoboot
+    vax4: autoboot
 ---
 apiVersion: apps/v1
 kind: StatefulSet
@@ -69,4 +68,4 @@ spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
         requests:
-          storage: 10Gi
+          storage: 50Gi
